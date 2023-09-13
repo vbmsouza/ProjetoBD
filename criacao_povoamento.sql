@@ -545,7 +545,7 @@ BEGIN
             INSERT INTO CANTA (ID, NUM, ID_ART) VALUES (ID_MUSICA, NUM_MUSICA, ID_ARTISTA);
         EXCEPTION
             WHEN DUP_VAL_ON_INDEX THEN
-                CONTINUE; -- ignora a violação da restrição única e continua o loop
+                CONTINUE; 
         END;
 
     END LOOP;
